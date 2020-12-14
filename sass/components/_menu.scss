@@ -1,0 +1,52 @@
+.menu {
+  margin-left: 93px;
+}
+
+.list-menu {
+  display: flex;
+  align-items: center;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.item-menu:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link-menu {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $black;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  transition: color 250ms $animation-timing;
+}
+
+.link-studia {
+  position: relative;
+  color: $blue;
+}
+
+.link-studia::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  border-bottom: 4px solid $blue;
+  border-radius: 2px;
+  z-index: 55;
+}
+
+.link-menu:hover,
+.link-menu:focus {
+  color: $blue;
+}

@@ -1,0 +1,37 @@
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.list-contacts > .item-contacts + .item-contacts {
+  margin-left: 50px;
+}
+
+.link-contacts:hover .icon-contacts,
+.link-contacts:focus .icon-contacts {
+  fill: currentColor;
+}
+
+.icon-contacts {
+  fill: $black;
+  margin-right: 10px;
+  transition: fill 250ms $animation-timing;
+}
+
+.link-contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  color: $black;
+  font-family: roboto;
+  font-weight: 500;
+  line-height: 1.17;
+  transition: color 250ms $animation-timing;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: $blue;
+}

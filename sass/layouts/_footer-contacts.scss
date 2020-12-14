@@ -1,0 +1,44 @@
+.footer-link-map {
+  display: inline-block;
+  margin-top: 20px;
+  color: $white;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 1.17;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer-link-map:hover,
+.footer-link-map {
+  color: $blue;
+}
+
+.footer-link-contacts {
+  display: inline-block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 1.17;
+  font-size: 14px;
+  font-style: normal;
+  transition-duration: 250ms;
+  transition-timing-function: $animation-timing;
+}
+
+.footer-link-contacts:hover,
+.footer-link-contacts:focus {
+  color: rgba(33, 150, 243, 1);
+}
+
+.logo-studio-footer {
+  color: $white;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.67;
+  font-size: 26px;
+}

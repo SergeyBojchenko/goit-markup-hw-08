@@ -1,0 +1,63 @@
+.description {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-description {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -30px;
+}
+
+.item-description {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.item-description::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.item-description:nth-child(1)::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+
+.item-description:nth-child(2)::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.item-description:nth-child(3)::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.item-description:nth-child(4)::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
+
+.description {
+  background-color: $white;
+}
+
+.description-heading {
+  color: $black;
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.description-text {
+  color: $light-grey;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 1.71;
+}

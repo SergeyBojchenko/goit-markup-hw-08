@@ -1,0 +1,35 @@
+.footer-section-link {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-heading-social {
+  color: $white;
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.link-icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: $animation-timing;
+}
+
+.link-icon-footer:hover,
+.link-icon-footer:focus {
+  background-color: $blue;
+}
+
+.icon-footer-link {
+  fill: $white;
+}

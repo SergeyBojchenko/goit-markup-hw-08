@@ -1,0 +1,62 @@
+.team-container {
+  max-width: 270px;
+  max-height: 428px;
+  padding-left: px;
+  padding-right: px;
+  padding-bottom: 30px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+
+.team {
+  background-color: $background-light-grey;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -30px;
+}
+
+.item-team {
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.team-heading {
+  color: $black;
+  font-family: roboto;
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.worker-name {
+  color: $black;
+  font-family: roboto;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.worker-position {
+  color: $light-grey;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
