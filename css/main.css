@@ -1268,6 +1268,13 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 479px) {
+  .subscription__form__field {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   .subscription__form__field {
     width: 358px;
