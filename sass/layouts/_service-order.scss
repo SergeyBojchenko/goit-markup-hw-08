@@ -19,21 +19,46 @@
 .container-service-order {
   display: flex;
   flex-wrap: wrap;
-  max-width: 696px;
+  max-width: 360px;
   max-height: 120px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+
+  @include for-size(tablet) {
+    max-width: 1199px;
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+
+  @include for-size(desctop) {
+    max-width: 696px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .service-order-text {
-  color: $white;
-  font-family: roboto;
-  font-weight: 900;
-  line-height: 1.36;
-  font-size: 44px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    color: $white;
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desctop) {
+    color: $white;
+    font-family: roboto;
+    font-weight: 900;
+    line-height: 1.36;
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
 }

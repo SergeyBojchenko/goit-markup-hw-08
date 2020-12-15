@@ -1,6 +1,11 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-heading {
@@ -10,5 +15,9 @@
   line-height: 1.17;
   font-size: 36px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include for-size(desctop) {
+    margin-bottom: 50px;
+  }
 }
