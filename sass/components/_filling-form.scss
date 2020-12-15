@@ -120,11 +120,15 @@
 .acceptance-conditions {
   font-family: roboto;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $light-grey;
   margin-left: 7px;
+
+  @include for-size(desctop) {
+    font-size: 14px;
+  }
 }
 
 .link-contract {

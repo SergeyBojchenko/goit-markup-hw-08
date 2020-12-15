@@ -27,8 +27,13 @@
 
 .team {
   background-color: $background-light-grey;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-team {

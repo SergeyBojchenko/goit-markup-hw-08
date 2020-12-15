@@ -39,14 +39,14 @@
     }
   }
 
-  &:nth-child(n + 3) {
-    @media screen and(min-width: 480px) and(max-width: 767px) {
+  @media screen and(min-width: 480px) and(max-width: 767px) {
+    &:nth-child(n + 3) {
       margin-top: 30px;
     }
   }
 
-  &:nth-child(n + 4) {
-    @media screen and(min-width: 780px) and(max-width: 1199px) {
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    &:nth-child(n + 4) {
       margin-top: 30px;
     }
   }

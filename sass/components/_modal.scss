@@ -24,18 +24,28 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $white;
   text-align: center;
   transition: transform 500ms $animation-timing;
+
+  @include for-size(desctop) {
+    width: 528px;
+    height: 581px;
+    line-height: 1.17;
+  }
 }
 
 .modal-heading {
   font-family: roboto;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.17;
+  line-height: 1.5;
   color: rgba(33, 33, 33, 1);
   margin: 0px 0px 12px 0px;
+
+  @include for-size(desctop) {
+    line-height: 1.17;
+  }
 }

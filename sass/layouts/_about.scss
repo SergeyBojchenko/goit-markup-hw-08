@@ -1,5 +1,10 @@
 .about {
-  padding-bottom: 94px;
+  display: none;
+
+  @include for-size(desctop) {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .about-img {
