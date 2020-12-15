@@ -1,7 +1,12 @@
-.footer-section-link {
-  margin-left: 70px;
-  margin-top: 12px;
-}
+// .footer-section-link {
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @include for-size(desctop) {
+//     margin-left: 70px;
+//     margin-top: 12px;
+//   }
+// }
 
 .footer-heading-social {
   color: $white;
@@ -10,6 +15,23 @@
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+}
+
+.footer-list-link {
+  display: flex;
+  margin-top: 20px;
+  margin-right: -10px;
+
+  @include for-size(desctop) {
+    // margin-top: ;
+  }
+}
+
+.footer-item-link {
+  flex-basis: calc(100% / 4 - 10px);
+  max-width: 44px;
+  max-height: 44px;
+  margin-right: 10px;
 }
 
 .link-icon-footer {

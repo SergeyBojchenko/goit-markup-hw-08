@@ -16,7 +16,7 @@
 
 .footer-link-contacts {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
   font-family: roboto;
   font-weight: 400;
@@ -25,6 +25,10 @@
   font-style: normal;
   transition-duration: 250ms;
   transition-timing-function: $animation-timing;
+
+  @include for-size(desctop) {
+    margin-top: 9px;
+  }
 }
 
 .footer-link-contacts:hover,
@@ -40,5 +44,10 @@
   font-family: Raleway;
   font-weight: 700;
   line-height: 1.67;
-  font-size: 26px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+
+  @include for-size(desctop) {
+    font-size: 26px;
+  }
 }

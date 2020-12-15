@@ -1,6 +1,6 @@
 .team-container {
-  max-width: 270px;
-  max-height: 428px;
+  // max-width: 270px;
+  // max-height: 428px;
   padding-left: px;
   padding-right: px;
   padding-bottom: 30px;
@@ -9,8 +9,20 @@
 }
 
 .team-img {
-  width: 270px;
-  height: 260px;
+  @include for-size(mobile) {
+    width: 450px;
+    height: 460px;
+  }
+
+  @include for-size(tablet) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @include for-size(desctop) {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .team {
@@ -29,6 +41,18 @@
 .item-team {
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
+
+  @media screen and(min-width: 480px) and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    &:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+  }
 }
 
 .team-heading {
@@ -36,9 +60,14 @@
   font-family: roboto;
   font-weight: 700;
   line-height: 1.17;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include for-size(desctop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .worker-name {

@@ -391,9 +391,74 @@ a {
   padding-bottom: 60px;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 480px) {
+  .footer-contacts {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    display: block;
+    width: 232px;
+    margin-left: 61px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-contacts {
+    margin-left: 0px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 480px) {
+  .footer-section-link {
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-section-link {
+    display: block;
+    width: 206px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: 74px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-section-link {
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 12px;
+    text-align: left;
+  }
 }
 
 .footer-link-map {
@@ -414,7 +479,7 @@ a {
 
 .footer-link-contacts {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
   font-family: roboto;
   font-weight: 400;
@@ -423,6 +488,12 @@ a {
   font-style: normal;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .footer-link-contacts {
+    margin-top: 9px;
+  }
 }
 
 .footer-link-contacts:hover,
@@ -438,12 +509,14 @@ a {
   font-family: Raleway;
   font-weight: 700;
   line-height: 1.67;
-  font-size: 26px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
 }
 
-.footer-section-link {
-  margin-left: 70px;
-  margin-top: 12px;
+@media (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+  }
 }
 
 .footer-heading-social {
@@ -453,6 +526,19 @@ a {
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+}
+
+.footer-list-link {
+  display: flex;
+  margin-top: 20px;
+  margin-right: -10px;
+}
+
+.footer-item-link {
+  flex-basis: calc(100% / 4 - 10px);
+  max-width: 44px;
+  max-height: 44px;
+  margin-right: 10px;
 }
 
 .link-icon-footer {
@@ -477,21 +563,46 @@ a {
   fill: #ffffff;
 }
 
-.subscription {
-  margin-left: 93px;
-  margin-top: 12px;
+@media (min-width: 480px) {
+  .subscription {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 
-.subscription__form {
-  display: flex;
-  margin-top: 20px;
+@media (min-width: 768px) {
+  .subscription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscription {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 12px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscription__form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 .subscription__form__field {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 16px;
   font-family: Roboto;
   font-weight: 400;
@@ -501,13 +612,22 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (min-width: 1200px) {
+  .subscription__form__field {
+    width: 358px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .subscription__form__button {
   display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
   padding-left: 29px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -519,6 +639,13 @@ a {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .subscription__form__button {
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 
 .subscription__form__field__icon {
