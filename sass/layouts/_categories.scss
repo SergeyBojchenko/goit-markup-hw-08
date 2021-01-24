@@ -1,16 +1,47 @@
 .categories {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  @media screen and(max-width:767px) {
+    max-width: 480px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  @include for-size(desctop) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .container-categories {
-  max-width: 609px;
+  max-width: 611px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and(max-width:767px) {
+    max-width: 362px;
+    margin-left: 15px;
+    margin-right: 103px;
+  }
 }
 
 .list-categories {
   display: flex;
+  margin-top: -15px;
+  margin-right: -8px;
+
+  @media screen and(max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.item-categories {
+  margin-top: 15px;
 }
 
 .item-categories:not(:last-child) {

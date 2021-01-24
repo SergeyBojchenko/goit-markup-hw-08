@@ -1,15 +1,30 @@
 .link-portfolio-box {
   box-sizing: border-box;
-  max-width: 370px;
+  width: 100%;
   max-height: 404px;
   border: 1px solid #eee;
+
+  @include for-size(tablet) {
+    max-width: 354px;
+  }
+
+  @include for-size(desctop) {
+    max-width: 370px;
+  }
 }
 
 .box-img {
   position: relative;
-  width: 370px;
-  height: 294px;
+  width: 100%;
   overflow: hidden;
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desctop) {
+    width: 370px;
+  }
 }
 
 .box-img__overlay {
@@ -53,8 +68,15 @@
 }
 
 portfolio-img {
-  max-width: 370px;
-  max-height: 294px;
+  width: 100%;
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desctop) {
+    width: 370px;
+  }
 }
 
 .portfolio-heading {

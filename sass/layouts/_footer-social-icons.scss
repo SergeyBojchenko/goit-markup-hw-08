@@ -1,13 +1,3 @@
-// .footer-section-link {
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @include for-size(desctop) {
-//     margin-left: 70px;
-//     margin-top: 12px;
-//   }
-// }
-
 .footer-heading-social {
   color: $white;
   font-family: roboto;
@@ -21,10 +11,6 @@
   display: flex;
   margin-top: 20px;
   margin-right: -10px;
-
-  @include for-size(desctop) {
-    // margin-top: ;
-  }
 }
 
 .footer-item-link {

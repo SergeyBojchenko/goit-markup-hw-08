@@ -1,14 +1,38 @@
 .header {
   background-color: $white;
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .container-menu {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  max-height: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 767px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    max-width: 767px;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(desctop) {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    height: 80px;
+  }
+}
+
+.container-menu:after {
+  border: 1px solid #ececec;
 }

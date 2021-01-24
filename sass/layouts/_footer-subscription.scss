@@ -1,15 +1,8 @@
 .subscription {
-  @include for-size(mobile) {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    text-align: center;
-  }
-
-  @include for-size(tablet) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  text-align: center;
 
   @include for-size(desctop) {
     margin-left: auto;
