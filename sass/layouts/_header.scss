@@ -1,4 +1,5 @@
 .header {
+  box-sizing: border-box;
   background-color: $white;
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -29,7 +30,7 @@
     display: flex;
     align-items: center;
     max-width: 1200px;
-    height: 80px;
+    height: 79px;
   }
 }
 
