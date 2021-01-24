@@ -838,7 +838,7 @@ a {
     display: flex;
     align-items: center;
     max-width: 767px;
-    height: 60px;
+    height: 79px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -851,7 +851,6 @@ a {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    height: 79px;
   }
 }
 
