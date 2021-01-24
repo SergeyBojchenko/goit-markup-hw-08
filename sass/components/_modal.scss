@@ -4,13 +4,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 221px;
+  padding-top: 93px;
   padding-right: 15px;
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms $animation-timing;
   overflow-y: scroll;
   z-index: 10;
+
+  @include for-size(tablet) {
+    padding-top: 208px;
+  }
+
+  @include for-size(desctop) {
+    padding-top: 221px;
+  }
 }
 
 .backdrop.is-hidden {
