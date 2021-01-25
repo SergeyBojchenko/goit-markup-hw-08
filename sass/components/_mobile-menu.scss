@@ -1,6 +1,5 @@
 .mobile-menu-container {
-  // display: none;
-  // transform: translateX(-100);
+  display: none;
   @media screen and(max-width: 767px) {
     & {
       position: absolute;
@@ -16,7 +15,7 @@
       transition: transform 250ms $animation-timing;
     }
     &.is-open {
-      // display: block;
+      display: block;
       transform: translateX(0);
     }
   }

@@ -390,6 +390,10 @@ a {
   fill: #ffffff;
 }
 
+.mobile-menu-container {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
     position: absolute;
@@ -405,6 +409,7 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu-container.is-open {
+    display: block;
     transform: translateX(0);
   }
 }
